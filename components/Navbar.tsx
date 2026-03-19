@@ -143,7 +143,7 @@ export default function Navbar({ lang }: NavbarProps) {
                       onMouseLeave={() => setServicesOpen(false)}
                     >
                       <div className="h-px w-full" style={{ background: 'linear-gradient(to right, transparent, oklch(0.78 0.12 75), transparent)' }} />
-                      {services.map((s: string, i: number) => (
+                      {services.map((s: { tag: string; title: string }, i: number) => (
                         <Link
                           key={i}
                           href={serviceRoutes[i]}
@@ -312,7 +312,7 @@ export default function Navbar({ lang }: NavbarProps) {
                   </button>
                   {mobileServicesOpen && (
                     <div className="mt-1 ml-2 flex flex-col gap-1 mb-2">
-                      {services.map((s: string, i: number) => (
+                      {services.map((s: { tag: string; title: string }, i: number) => (
                         <Link
                           key={i}
                           href={serviceRoutes[i]}
