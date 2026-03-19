@@ -37,7 +37,7 @@ export async function generateMetadata({
 
   return {
     title: `${serviceData.title} | ATREVIA Consultores`,
-    description: serviceData.description ?? serviceData.title,
+    description: serviceData.desc ?? serviceData.title,
     alternates: {
       canonical: `${BASE_URL}/${lang}/servicios/${service}`,
       languages: Object.fromEntries(
