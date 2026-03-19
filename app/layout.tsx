@@ -6,7 +6,7 @@ import './globals.css'
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-display',
+  variable: '--font-display-var',
   display: 'swap',
 })
 
@@ -174,7 +174,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.resend.com" />
         <link rel="dns-prefetch" href="https://wa.me" />
       </head>
-      <body className="antialiased" style={{ fontFamily: 'Inter, sans-serif' }}>
+      <body className="antialiased font-sans bg-background text-foreground">
         {children}
         <script
           type="application/ld+json"
