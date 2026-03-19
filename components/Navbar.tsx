@@ -96,9 +96,15 @@ export default function Navbar({ lang }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[oklch(0.12_0.025_255/0.97)] backdrop-blur-xl border-b border-[oklch(0.25_0.03_255)]'
-          : 'bg-transparent'
+          ? 'backdrop-blur-xl border-b border-[oklch(0.25_0.03_255)]'
+          : ''
       }`}
+      style={{
+        background: scrolled
+          ? 'oklch(0.12 0.025 255 / 0.97)'
+          : 'linear-gradient(to bottom, oklch(0.10 0.025 255 / 0.85), transparent)',
+        backdropFilter: scrolled ? 'blur(24px)' : 'none',
+      }}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
 
