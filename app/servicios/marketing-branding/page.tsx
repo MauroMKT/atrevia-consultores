@@ -94,6 +94,7 @@ export default function MarketingBrandingPage() {
       <ServicePageLayout
         serviceIndex={0}
         heroImage="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1400&q=80&fit=crop"
+        lang="es"
       />
     </>
   )

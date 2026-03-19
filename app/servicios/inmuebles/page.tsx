@@ -93,6 +93,7 @@ export default function InmueblesPage() {
       <ServicePageLayout
         serviceIndex={2}
         heroImage="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=80&fit=crop"
+        lang="es"
       />
     </>
   )

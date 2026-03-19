@@ -95,6 +95,7 @@ export default function DisenoInterioresPage() {
       <ServicePageLayout
         serviceIndex={3}
         heroImage="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1400&q=80&fit=crop"
+        lang="es"
       />
     </>
   )

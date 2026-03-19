@@ -97,6 +97,7 @@ export default function DesarrolloEmpresarialPage() {
       <ServicePageLayout
         serviceIndex={1}
         heroImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1400&q=80&fit=crop"
+        lang="es"
       />
     </>
   )
