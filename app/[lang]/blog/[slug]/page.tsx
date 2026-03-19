@@ -1,9 +1,11 @@
+export const dynamic = 'force-dynamic'
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, Clock, Calendar, BookOpen } from 'lucide-react'
 import { translations, type Language } from '@/lib/translations'
-import { getPostBySlug, getAllPosts, getAllSlugs, SERVICE_LABELS } from '@/lib/blog-registry'
+import { getPostBySlug, getAllPosts, SERVICE_LABELS } from '@/lib/blog-registry'
 import type { ServiceSlug } from '@/lib/blog-types'
 
 const BASE_URL = 'https://www.atreviaconsultores.com'
@@ -22,9 +24,6 @@ function serviceColor(service: ServiceSlug): string {
   return map[service] ?? 'oklch(0.78 0.12 75)'
 }
 
-export async function generateStaticParams() {
-  return getAllSlugs().map(({ lang, slug }) => ({ lang, slug }))
-}
 
 export async function generateMetadata({
   params,
