@@ -22,7 +22,7 @@ export default function NosotrosPage() {
 
   return (
     <div style={{ background: 'oklch(0.12 0.025 255)', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
-      <Navbar />
+      <Navbar lang={lang} />
 
       {/* Hero */}
       <div className="relative pt-16 h-[60vh] min-h-[400px] overflow-hidden">
