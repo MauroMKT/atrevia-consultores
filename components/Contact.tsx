@@ -347,7 +347,7 @@ export default function Contact({ lang }: ContactProps) {
                       style={{ background: inputBg, border: inputBorder('service'), fontFamily: 'Inter, sans-serif' }}
                     >
                       <option value="" style={{ background: 'oklch(0.20 0.03 255)' }}>—</option>
-                      {f.services.map((s, i) => (
+                      {f.services.map((s: string, i: number) => (
                         <option key={i} value={s} style={{ background: 'oklch(0.20 0.03 255)' }}>{s}</option>
                       ))}
                     </select>
